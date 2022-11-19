@@ -1,9 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
-import SingleProduct from "./pages/SingleProduct";
-import Header from "./components/Header";
+
+import Header from "../components/header/Header";
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import NotFound from "../pages/notFound/NotFound";
+import SingleProduct from "../pages/singleProduct/SingleProduct";
+
+import "../app/base.scss";
+import "../app/normalize.scss";
 
 function App() {
   return (

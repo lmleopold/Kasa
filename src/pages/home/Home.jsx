@@ -1,5 +1,5 @@
-import Logo from "../logo.jsx";
-import "../styles/Home.css";
+import Logo from "../../logo.jsx";
+import "./home.scss";
 
 function Home() {
   return (
