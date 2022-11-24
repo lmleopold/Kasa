@@ -1,12 +1,27 @@
-import Logo from "../../logo.jsx";
-import "./home.scss";
+import styles from "./home.module.scss";
+import seaLandscape from "../../assets/sea-large.jpg";
+import Banner from "../../components/banner/Banner";
+import data from "../../data/logements.json";
+import Card from "../../components/card/Card";
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <Logo />
-    </div>
+    <main>
+      <Banner
+        picture={seaLandscape}
+        altText="Sea landscape"
+        bannerTitle="Chez vous, partout et ailleurs"
+      />
+      <ul className={styles.cardList}>
+        {data.map((logmt) => {
+          return (
+            <li key={logmt.id}>
+              <Card title={logmt.title} id={logmt.id} cover={logmt.cover} />
+            </li>
+          );
+        })}
+      </ul>
+    </main>
   );
 }
 

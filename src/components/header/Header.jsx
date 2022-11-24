@@ -4,8 +4,8 @@ import styles from "../header/header.module.scss";
 
 function Header() {
   return (
-    <header>
-      <LogoOrange />
+    <header className={styles.header}>
+      <LogoOrange className={styles.logo} />
       <Navbar />
     </header>
   );

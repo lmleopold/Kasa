@@ -1,0 +1,9 @@
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  // border: 2px black solid;
+  gap: 20px;
+  padding: 20px;
+}

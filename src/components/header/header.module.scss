@@ -1,5 +1,11 @@
-header {
+.header {
+  padding: 0px 60px;
   display: flex;
-  max-width: 1240;
+  gap: 60px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 30px auto;
   justify-content: space-between;
+  height: 68px;
+  // border: 2px black solid;
 }

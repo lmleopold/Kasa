@@ -1,0 +1,43 @@
+.card {
+  height: 340px;
+  width: 340px;
+  // max-width: 500px;
+  flex: 1;
+  // border: 2px black solid;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--primary-1);
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.title {
+  color: var(--neutral-1);
+  font-size: var(--cardTitleSize-d);
+  display: flex;
+  align-items: flex-end;
+  // justify-content: center;
+  font-weight: 500;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  // border: 2px black solid;
+}
+
+.cover {
+  opacity: 0.9;
+}
+
+.masque {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
