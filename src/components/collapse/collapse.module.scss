@@ -2,13 +2,14 @@
   margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
+  flex: 1;
 }
 
 .collapseHeader {
   background-color: var(--primary-1);
   display: flex;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -21,16 +22,16 @@
 .collapseTxt {
   font-size: var (--collapseTxtSize-d);
   background-color: var(--neutral-1);
-  padding: 20px;
+  padding: 20px 15px 10px 15px;
+  line-height: 142%;
+}
+.collapseList {
+  font-size: var (--collapseTxtSize-d);
+  background-color: var(--neutral-1);
+  padding: 20px 15px 10px 15px;
 }
 
 .about {
-  &.collapseItem {
-    margin: {
-      left: 80px;
-      right: 80px;
-    }
-  }
   .collapseTitle {
     font-size: var(--aboutCollapseTitleSize-d);
   }
@@ -39,7 +40,7 @@
   }
 }
 
-button {
+.collapseButton {
   background-color: var(--primary-1);
   border: none;
   height: 100%;

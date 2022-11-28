@@ -3,24 +3,26 @@ import styles from "./collapse.module.scss";
 import ArrowBottom from "../../assets/button/ArrowBottom";
 import ArrowTop from "../../assets/button/ArrowTop";
 
-function Collapse({ title, content, page }) {
-  const [isOpen, setIsOpen] = useState(false);
+function Collapse({ title, content, isList, page }) {
+  const [isOpen, setIsOpen] = useState(true);
 
   const collapseButton = isOpen ? <ArrowTop /> : <ArrowBottom />;
 
-  const collapseContent =
-    page === "about" ? (
-      <p className={styles.collapseTxt}>{content}</p>
-    ) : (
-      <ul className={styles.collapseTxt}>{content}</ul>
-    );
+  const collapseContent = isList ? (
+    <ul className={styles.collapseList}>{content}</ul>
+  ) : (
+    <p className={styles.collapseTxt}>{content}</p>
+  );
 
   return isOpen ? (
     <section className={`${styles.collapseItem} ${styles[page]}`}>
       <header className={styles.collapseHeader}>
         <h2 className={styles.collapseTitle}>{title}</h2>
         <div>
-          <button onClick={() => setIsOpen(isOpen ? false : true)}>
+          <button
+            className={styles.collapseButton}
+            onClick={() => setIsOpen(isOpen ? false : true)}
+          >
             {collapseButton}
           </button>
         </div>
@@ -32,7 +34,10 @@ function Collapse({ title, content, page }) {
       <header className={styles.collapseHeader}>
         <h2 className={styles.collapseTitle}>{title}</h2>
         <div>
-          <button onClick={() => setIsOpen(isOpen ? false : true)}>
+          <button
+            className={styles.collapseButton}
+            onClick={() => setIsOpen(isOpen ? false : true)}
+          >
             {collapseButton}
           </button>
         </div>

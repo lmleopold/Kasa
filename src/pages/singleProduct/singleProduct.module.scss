@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin: {
+    top: 10px;
+  }
+  flex: 1;
+  // border: 2px yellow solid;
+}
+
+.collapseTxt {
+  line-height: 142%;
+}

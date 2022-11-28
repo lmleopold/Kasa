@@ -23,8 +23,9 @@
   --collapseTitleSize-d: 1.29rem;
   --collapseTxtSize-d: 1.29rem;
   --hostNameSize-d: 1.29rem;
-  --hostCircleSize-d: 4.57rem;
+  --hostPictureSize-d: 4.57rem;
   --starSize-d: 2.57rem;
+  --flagSize-d: 1.29rem;
 
   /*==mobile==*/
 
@@ -37,7 +38,7 @@
   --collapseTitleSize-m: 1.3rem;
   --collapseTxtSize-m: 1.2rem;
   --hostNameSize-m: 1.2rem;
-  --hostCircleSize-m: 3.2rem;
+  --hostPictureSize-m: 3.2rem;
   --starSize-m: 1.8rem;
 }
 
@@ -71,6 +72,7 @@ html {
 
 main {
   padding: 0px 60px;
+  // display: flex;
   flex: 1;
   // border: 4px blue solid;
   width: 100%;

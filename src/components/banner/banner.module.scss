@@ -1,7 +1,5 @@
 .banner {
   display: flex;
-  flex: 1;
-  flex-shrink: 1;
   height: 223px;
   // border: solid 2px black;
   border-radius: 25px;
@@ -13,10 +11,12 @@
 .img {
   object-fit: cover;
   flex: 1;
+  margin-bottom: -160px;
 }
 
 .masque {
   background-color: var(--darkColor);
+
   opacity: 0.3;
   z-index: 1;
   width: 100%;
