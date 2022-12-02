@@ -1,35 +1,80 @@
 import { useParams } from "react-router-dom";
 import Carroussel from "../../components/carroussel/Carroussel";
-import BannerCaption from "../../components/bannerCaption/BannerCaption";
 import Collapse from "../../components/collapse/Collapse";
-import data from "../../data/logements.json";
 import styles from "./singleProduct.module.scss";
-
+import { useEffect, useState } from "react";
+import SlideshowCaption from "../../components/slideShowCaption/SlideShowCaption";
+/**
+ * Contient le contenu du corps de la page de description d'un logement
+ */
 function SingleProduct() {
+  //Récupération des paramètres entrés en URL
   const params = useParams();
-  const logement = data.find((e) => e.id === params.id);
-  const equipements = logement.equipments.map((equipment, index) => (
-    <li className={styles.collapseTxt} key={`${equipment} + ${index}`}>
-      {equipment}
-    </li>
-  ));
+
+  //Tant que les données ne sont pas chargées on bloque le rendu à l'intérieur du <main></main>
+  const [isDataLoading, setDataLoading] = useState(true);
+
+  //Création d'une varaible d'état qui stockera la description du logement ciblé en URL
+  const [accomodation, setAccomodation] = useState({});
+
+  //On charge les données une seule fois après le premier rendu du composant <SingleProduct />
+  useEffect(() => {
+    /**
+     * Se connecte à l'API et renvoit le détail du logement ciblé en URL
+     */
+    async function fetchData() {
+      try {
+        const res = await fetch(
+          `http://localhost:3000/accomodations/${params.id}`
+        );
+        const logement = await res.json();
+        setAccomodation(logement);
+      } catch (error) {
+        console.log({ error });
+      } finally {
+        /* les données sont bien chargées et isDataLoading change d'état: le composant <SingleProduct />
+        est re-render avec pour isDataLoading et accomodation leurs nouvelles valeurs détat*/
+        setDataLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
 
   return (
     <main>
-      <Carroussel cover={logement.cover} pictures={logement.pictures} />
-      <BannerCaption
-        title={logement.title}
-        location={logement.location}
-        tags={logement.tags}
-        host={logement.host.name}
-        hostPicture={logement.host.picture}
-        grade={logement.rating}
-      />
-      <div className={styles.container}>
-        <Collapse title="Description" content={logement.description} />
-        <Collapse title="Equipements" content={equipements} isList="true" />
-      </div>
+      {!isDataLoading && (
+        <>
+          <Carroussel
+            cover={accomodation.cover}
+            pictures={accomodation.pictures}
+          />
+          <SlideshowCaption
+            title={accomodation.title}
+            location={accomodation.location}
+            tags={accomodation.tags}
+            host={accomodation.host.name}
+            hostPicture={accomodation.host.picture}
+            grade={accomodation.rating}
+          />
+          <div className={styles.container}>
+            <Collapse title="Description" content={accomodation.description} />
+            <Collapse
+              title="Equipements"
+              content={accomodation.equipments.map((equipment, index) => (
+                <li
+                  className={styles.collapseTxt}
+                  key={`${equipment} + ${index}`}
+                >
+                  {equipment}
+                </li>
+              ))}
+              isList="true"
+            />
+          </div>
+        </>
+      )}
     </main>
   );
 }
+
 export default SingleProduct;

@@ -1,0 +1,13 @@
+.tagTab {
+  display: flex;
+  gap: 10px;
+}
+.tagTab__tag {
+  font-size: var(--tagSize-d);
+  border-radius: 10px;
+  background-color: var(--primary-1);
+  color: white;
+  padding: 5px;
+  min-width: 115px;
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+.infos {
+  display: flex;
+
+  // border: 3px black solid;
+  align-items: center;
+}
+.name {
+  font-size: var(--hostNameSize-d);
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 5px;
+}
+.portrait {
+  width: var(--hostPictureSize-d);
+  height: var(--hostPictureSize-d);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.portrait__img {
+  max-width: 100%;
+}
