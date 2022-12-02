@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import Carroussel from "../../components/carroussel/Carroussel";
 import Collapse from "../../components/collapse/Collapse";
 import styles from "./singleProduct.module.scss";
 import { useEffect, useState } from "react";
 import SlideshowCaption from "../../components/slideShowCaption/SlideShowCaption";
+import SlideShow from "../../components/slideShow/SlideShow";
 /**
  * Contient le contenu du corps de la page de description d'un logement
  */
@@ -44,7 +44,7 @@ function SingleProduct() {
     <main>
       {!isDataLoading && (
         <>
-          <Carroussel
+          <SlideShow
             cover={accomodation.cover}
             pictures={accomodation.pictures}
           />

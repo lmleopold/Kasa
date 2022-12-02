@@ -1,9 +1,9 @@
 import ArrowRight from "../../assets/button/ArrowRight";
 import ArrowLeft from "../../assets/button/ArrowLeft";
-import styles from "./carrousel.module.scss";
+import styles from "./slideShow.module.scss";
 import { useState } from "react";
 
-function Carroussel({ cover, pictures }) {
+function SlideShow({ cover, pictures }) {
   let indexCover = pictures.findIndex((picture) => cover === picture);
   const [indexTab, updateIndex] = useState(indexCover);
 
@@ -53,4 +53,4 @@ function Carroussel({ cover, pictures }) {
     </header>
   );
 }
-export default Carroussel;
+export default SlideShow;
