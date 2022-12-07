@@ -5,50 +5,11 @@
   flex: 1;
 }
 
-.collapseHeader {
-  background-color: var(--primary-1);
-  display: flex;
-  border-radius: 5px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.collapseTitle {
-  font-size: var(--collapseTitleSize-d);
-  color: white;
-}
-
-.collapseTxt {
-  font-size: var (--collapseTxtSize-d);
-  background-color: var(--neutral-1);
-  padding: 20px 15px 10px 15px;
-  line-height: 142%;
-}
-.collapseList {
-  font-size: var (--collapseTxtSize-d);
-  background-color: var(--neutral-1);
-  padding: 20px 15px 10px 15px;
-}
-
 .about {
   .collapseTitle {
     font-size: var(--aboutCollapseTitleSize-d);
   }
   .collapseTxt {
     font-size: var(--aboutCollapseTxtSize-d);
-  }
-}
-
-.collapseButton {
-  background-color: var(--primary-1);
-  border: none;
-  height: 100%;
-  cursor: pointer;
-  z-index: 10;
-  &:hover,
-  &:focus,
-  &:active {
-    text-shadow: white 1px 0 3px;
   }
 }

@@ -1,11 +1,9 @@
+@import "../../app/breakpoints";
+
 .card {
   height: 340px;
   width: 340px;
-  // max-width: 500px;
-  flex: 1;
-  // border: 2px black solid;
-  border-radius: 10px;
-  overflow: hidden;
+  // border: 5px black solid;
   background-color: var(--primary-1);
   gap: 10px;
   display: flex;
@@ -40,4 +38,25 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.5) 100%
   );
+}
+
+/*****************
+ **Media Queries**
+ *****************/
+
+@media (max-width: $mobileBreakPoint) {
+  .card {
+    max-width: 100%;
+    height: none;
+    width: 100%;
+
+    // max-height: max-width;
+  }
+  .title {
+    font-size: var(--cardTitleSize-m);
+  }
+
+  .cover {
+    width: 100%;
+  }
 }

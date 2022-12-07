@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Collapse from "../../components/collapse/Collapse";
 import styles from "./singleProduct.module.scss";
 import { useEffect, useState } from "react";
@@ -10,6 +10,8 @@ import SlideShow from "../../components/slideShow/SlideShow";
 function SingleProduct() {
   //Récupération des paramètres entrés en URL
   const params = useParams();
+
+  const navigate = useNavigate();
 
   //Tant que les données ne sont pas chargées on bloque le rendu à l'intérieur du <main></main>
   const [isDataLoading, setDataLoading] = useState(true);
@@ -27,10 +29,14 @@ function SingleProduct() {
         const res = await fetch(
           `http://localhost:3000/accomodations/${params.id}`
         );
-        const logement = await res.json();
-        setAccomodation(logement);
+        if (!res.ok) {
+          navigate("/NotFound");
+        } else {
+          const logement = await res.json();
+          setAccomodation(logement);
+        }
       } catch (error) {
-        console.log({ error });
+        console.info({ error });
       } finally {
         /* les données sont bien chargées et isDataLoading change d'état: le composant <SingleProduct />
         est re-render avec pour isDataLoading et accomodation leurs nouvelles valeurs détat*/

@@ -1,0 +1,30 @@
+.collapseHeader {
+  background-color: var(--primary-1);
+  display: flex;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapseTitle {
+  font-size: var(--collapseTitleSize-d);
+  color: white;
+}
+
+.collapseButton {
+  background-color: var(--primary-1);
+  border: none;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: white 1px 0 3px;
+  }
+}
+
+// .about .collapseTitle {
+//   font-size: var(--aboutCollapseTitleSize-d);
+// }

@@ -4,9 +4,14 @@ import Banner from "../../components/banner/Banner";
 import Card from "../../components/card/Card";
 import { useEffect, useState } from "react";
 
+// Affiche la page d'acceuil
 function Home() {
+  //
   const [isDataLoading, setDataLoading] = useState(false);
   const [accomodations, setAccomodations] = useState([]);
+  // const [matches, setMatches] = useState(
+  //   window.matchMedia(`(min-width: 375px)`).matches
+  // );
 
   // useEffect(() => {
   //   setDataLoading(true);
@@ -34,6 +39,12 @@ function Home() {
     }
     fetchData();
   }, []);
+
+  // useEffect(() => {
+  //   window
+  //     .matchMedia("(min-width: 768px)")
+  //     .addEventListener("change", (e) => setMatches(e.matches));
+  // }, []);
   return (
     <main>
       <Banner
@@ -46,7 +57,7 @@ function Home() {
           {!isDataLoading &&
             accomodations.map((accomodation) => {
               return (
-                <li key={accomodation.id}>
+                <li key={accomodation.id} className={styles.cardItem}>
                   <Card
                     title={accomodation.title}
                     id={accomodation.id}

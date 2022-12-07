@@ -1,0 +1,35 @@
+.container {
+  padding: 100px;
+}
+
+.title {
+  font-size: var(--404-title-d);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: var(--404-subtitle-d);
+  align-items: flex-end;
+}
+
+.link {
+  color: var(--primary-1);
+  font-size: var(--404-link-d);
+  text-decoration: underline;
+  align-items: flex-end;
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: var(--primary-1) 1px 0 3px;
+  }
+}
+
+.title,
+.subtitle,
+.link {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  // border: 2px black solid;
+}

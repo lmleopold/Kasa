@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/" className={styles.navLink}>
-        Acceuil
+        Accueil
       </Link>
       <Link to="/About" className={styles.navLink}>
         A Propos
