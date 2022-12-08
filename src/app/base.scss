@@ -1,3 +1,4 @@
+@import "./breakpoints";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /* ============
@@ -34,7 +35,7 @@
 
   /*==mobile==*/
 
-  --headFootSize-m: 0.75rem;
+  --headFootSize-m: 0.8rem;
   --homeTitleSize-m: 1.5rem;
   --cardTitleSize-m: 1.13rem;
   --singleProdTitleSize-m: 1.13rem;
@@ -85,8 +86,12 @@ main {
   flex: 1;
   // border: 4px blue solid;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: auto;
+  padding: {
+    left: 100px;
+    right: 100px;
+  }
   display: flex;
   flex-direction: column;
 }
@@ -106,3 +111,8 @@ li {
 /*****************
  **Media Queries**
  *****************/
+@media (max-width: $mobileBreakPoint) {
+  main {
+    padding: 0;
+  }
+}

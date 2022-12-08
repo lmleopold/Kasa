@@ -5,16 +5,13 @@ nav {
   max-width: 50%;
   gap: 60px;
   align-items: center;
-  border: black solid 2px;
+  // border: black solid 2px;
 }
 
 .navLink {
-  border: 2px solid black;
+  // border: 2px solid black;
   outline: none;
   text-decoration: none;
-  // flex-wrap: nowrap;
-
-  // margin: 2px 30px;
   color: var(--primary-1);
   font-size: var(--headFootSize-d);
   &:hover,

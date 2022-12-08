@@ -1,14 +1,22 @@
 @import "../../app/breakpoints";
 
 .header {
-  padding: 30px 60px;
+  padding: 30px 100px 30px 160px;
   display: flex;
   gap: 30px;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   justify-content: space-between;
-  border: 2px black solid;
+  // border: 2px black solid;
+}
+.container {
+  max-height: 68px;
+  min-height: 47px;
+  max-width: 210px;
+  min-width: 145px;
+  width: 40%;
+  // border: 2px blue solid;
 }
 
 /*****************

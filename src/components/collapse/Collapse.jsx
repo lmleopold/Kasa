@@ -4,7 +4,7 @@ import CollapseContent from "./collapseContent/CollapseContent";
 import CollapseHeader from "./collapseHeader/CollapseHeader";
 
 function Collapse({ title, content, isList, page }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className={`${styles.collapseItem} ${styles[page]}`}>

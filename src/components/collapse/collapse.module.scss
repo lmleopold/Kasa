@@ -1,8 +1,10 @@
+@import "../../app/breakpoints";
+
 .collapseItem {
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   flex: 1;
-  border: 3px pink solid;
+  // border: 3px pink solid;
 }
 
 .about {
@@ -11,5 +13,15 @@
   }
   .collapseTxt {
     font-size: var(--aboutCollapseTxtSize-d);
+  }
+}
+
+/*****************
+ **Media Queries**
+ *****************/
+
+@media (max-width: $mobileBreakPoint) {
+  .collapseItem {
+    border-radius: 5px;
   }
 }

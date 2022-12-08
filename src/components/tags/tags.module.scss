@@ -1,7 +1,10 @@
+@import "../../app/breakpoints";
+
 .tagTab {
   display: flex;
   gap: 10px;
   padding-top: 10px;
+  flex-wrap: wrap;
 }
 .tagTab__tag {
   font-size: var(--tagSize-d);
@@ -11,4 +14,15 @@
   padding: 5px;
   min-width: 115px;
   text-align: center;
+}
+
+/*****************
+ **Media Queries**
+ *****************/
+
+@media (max-width: $mobileBreakPoint) {
+  .tagTab__tag {
+    font-size: var(--tagSize-m);
+    border-radius: 5px;
+  }
 }
