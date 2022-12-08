@@ -1,22 +1,47 @@
-.container {
+@import "../../app/breakpoints";
+
+.main {
   padding: 100px;
+  // border: 3px solid brown;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  // border: 2px solid purple;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .title {
   font-size: var(--404-title-d);
   font-weight: 700;
+  // border: 2px solid blue;
+  justify-content: center;
 }
 
 .subtitle {
   font-size: var(--404-subtitle-d);
-  align-items: flex-end;
+  align-items: flex-start;
+  // border: 2px solid pink;
+  display: flex;
+  flex: 0.7;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .link {
   color: var(--primary-1);
   font-size: var(--404-link-d);
   text-decoration: underline;
-  align-items: flex-end;
+  align-items: flex-start;
+  // border: 2px solid green;
+  display: flex;
+  flex: 1.3;
+  justify-content: center;
+  text-align: center;
+  // flex: 1;
   &:hover,
   &:focus,
   &:active {
@@ -24,12 +49,21 @@
   }
 }
 
-.title,
-.subtitle,
-.link {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  text-align: center;
-  // border: 2px black solid;
+@media (max-width: $mobileBreakPoint) {
+  .main {
+    padding: {
+      left: 50px;
+      right: 50px;
+    }
+  }
+
+  .title {
+    font-size: var(--404-title-m);
+  }
+  .subtitle {
+    font-size: var(--404-subtitle-m);
+  }
+  .link {
+    font-size: var(--404-link-m);
+  }
 }
