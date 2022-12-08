@@ -1,6 +1,12 @@
+/**
+ * Renvoit un composant "étoile" dont la couleur est fournie en props
+ * @param {String} color couleur de l'étoile
+ * @returns {JSX} dessin d'étoile format svg (pour la notation de l'hôte)
+ */
 function Star({ color }) {
   return (
     <svg
+      /*la taille est paramétrée via le contenur parent rating__star*/
       width="36"
       height="36"
       viewBox="0 0 36 36"

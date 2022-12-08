@@ -8,7 +8,10 @@ import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import NotFound from "../pages/notFound/NotFound";
 import SingleProduct from "../pages/singleProduct/SingleProduct";
-
+/**
+ * Renvoit les routes de l'application
+ * @returns {JSX} les routes de l'application
+ */
 function App() {
   return (
     <Router>

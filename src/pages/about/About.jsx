@@ -2,7 +2,11 @@ import Banner from "../../components/banner/Banner";
 import mountainLandscape from "../../assets/mountain-large.jpg";
 import Collapse from "../../components/collapse/Collapse";
 import styles from "./about.module.scss";
-
+/**
+ * Retourne le composant principal (main) de la page About comprent:
+ * une bannière et 4 composants collapse
+ * @returns {JSX}
+ */
 function About() {
   return (
     <main>

@@ -1,6 +1,13 @@
 import CollapseArrow from "../../../assets/button/CollaspeArrow";
 import styles from "./collapseHeader.module.scss";
 
+/**
+ * Retourne l'entête du composant "collapse"
+ * @param {String} title titre du collapse
+ * @param {Boolean} isOpen booleen variable qui indique l'état du composant (ouvert ou fermé)
+ * @param {Function} setIsOpen fonction qui maj l'état du composant
+ * @returns {JSX} l'entête du composant "collapse" et met à jour le sens de la flèche
+ */
 function CollapseHeader({ title, isOpen, setIsOpen }) {
   return (
     <header className={styles.collapseHeader}>

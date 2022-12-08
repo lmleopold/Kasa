@@ -4,14 +4,16 @@ import Banner from "../../components/banner/Banner";
 import Card from "../../components/card/Card";
 import { useEffect, useState } from "react";
 
-// Affiche la page d'acceuil
+/**
+ * Retourne le main de la page d'acceuil
+ * @returns {JSX}
+ */
 function Home() {
-  //
+  //variable isDataLoading permet de suivre si les données de l'API sont cnargées ou non
   const [isDataLoading, setDataLoading] = useState(false);
+
+  //variable accomodations permet de stockées les données reçues de l'API
   const [accomodations, setAccomodations] = useState([]);
-  // const [matches, setMatches] = useState(
-  //   window.matchMedia(`(min-width: 375px)`).matches
-  // );
 
   // useEffect(() => {
   //   setDataLoading(true);
@@ -47,12 +49,14 @@ function Home() {
   // }, []);
   return (
     <main>
+      {/**Bannière */}
       <Banner
         picture={seaLandscape}
         altText="Sea landscape"
         bannerTitle="Chez vous, partout et ailleurs"
       />
       {
+        //Liste des logments
         <ul className={styles.cardList}>
           {!isDataLoading &&
             accomodations.map((accomodation) => {

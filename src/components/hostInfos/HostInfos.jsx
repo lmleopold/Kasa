@@ -1,5 +1,11 @@
 import styles from "./hostInfos.module.scss";
 
+/**
+ * Retourne le nom et l'image de l'Hôte
+ * @param {String} hostName Prénom et Nom de l'hôte
+ * @param {String} hostPicture URL de l'image de l'Hôte
+ * @returns {JSX} le nom et l'image de l'Hôte
+ */
 function HostInfos({ hostName, hostPicture }) {
   const name = hostName.split(" ");
 
@@ -7,7 +13,7 @@ function HostInfos({ hostName, hostPicture }) {
   const firstName = name[0];
   name.shift();
 
-  //On regroupe les éventuels noms composés ou à particules
+  //On regroupe les éventuels noms composés ou à particules dans le nom de famille
   const lastName = name.join(" ");
 
   return (

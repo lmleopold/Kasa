@@ -1,12 +1,16 @@
-import LogoWhite from "../logo/LogoWhite";
+import LogoFooter from "../logo/LogoFooter";
 import styles from "./footer.module.scss";
 
-function footer() {
+/**
+ * Retourne le footer qui contient le logo et un paragraphe
+ * @returns {JSX} le footer
+ */
+function Footer() {
   return (
     <footer className={styles.footer}>
-      <LogoWhite />
+      <LogoFooter />
       <p className={styles.footerTxt}>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }
-export default footer;
+export default Footer;

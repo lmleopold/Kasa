@@ -51,10 +51,13 @@ function SingleProduct() {
     <main className={styles.main}>
       {!isDataLoading && (
         <>
+          {/**Carroussel des photos */}
           <SlideShow
             cover={accomodation.cover}
             pictures={accomodation.pictures}
           />
+
+          {/** Synthèses descriptive du logement sous carrousel*/}
           <SlideshowCaption
             title={accomodation.title}
             location={accomodation.location}
@@ -63,6 +66,7 @@ function SingleProduct() {
             hostPicture={accomodation.host.picture}
             grade={accomodation.rating}
           />
+          {/** détails du logement avec les 2 collapses*/}
           <div className={styles.collapseContainer}>
             <Collapse title="Description" content={accomodation.description} />
             <Collapse

@@ -1,4 +1,9 @@
-function LogoWhite() {
+/**
+ * Renvoie le logo Kasa du footer
+ * @returns {JSX} logo du footer
+ */
+
+function LogoFooter() {
   return (
     <svg
       width="122"
@@ -30,4 +35,4 @@ function LogoWhite() {
     </svg>
   );
 }
-export default LogoWhite;
+export default LogoFooter;

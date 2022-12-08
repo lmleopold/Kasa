@@ -6,15 +6,20 @@
   ============= */
 
 :root {
-  /*==color==*/
+  /*==couleurs==*/
+
+  /*Thême*/
   --primary-1: #ff6060;
   --neutral-1: #f7f7f7;
   --darkColor: black;
+
+  /*Couleurs des étoiles pour la notation des hôtes (composant rating)*/
   --shinyStar: #ff6060;
   --darkStar: #e3e3e3;
 
-  /*==desktop==*/
+  /*==Polices==*/
 
+  /*==desktop==*/
   --headFootSize-d: 1.5rem;
   --homeTitleSize-d: 3rem;
   --cardTitleSize-d: 1.13rem;
@@ -66,25 +71,19 @@
 html {
   // (taille par defaut 16px)
   font-size: 16px; //desktop
-  // font-size: 10px; //mobile
 }
 
 #root {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   min-height: 100vh;
-  // min-width: 375px;
   font-family: "Montserrat", sans-serif;
   // border: 10px orange solid;
 }
 
 main {
-  // padding: 0px 60px;
-  // display: flex;
   flex: 1;
-  // border: 4px blue solid;
   width: 100%;
   max-width: 1440px;
   margin: auto;
@@ -94,6 +93,7 @@ main {
   }
   display: flex;
   flex-direction: column;
+  // border: 4px blue solid;
 }
 
 h1,
@@ -104,8 +104,8 @@ p {
 }
 
 li {
-  list-style-type: none;
   color: var(--primary-1);
+  list-style-type: none;
 }
 
 /*****************

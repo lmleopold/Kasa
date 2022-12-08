@@ -1,12 +1,16 @@
 import Navbar from "../navbar/Navbar";
-import LogoOrange from "../logo/LogoOrange";
+import LogoHeader from "../logo/LogoHeader";
 import styles from "../header/header.module.scss";
 
+/**
+ * Renvoi le header qui contient le logo dans un container et la barre de navigation
+ * @returns {JSX}
+ */
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <LogoOrange className={styles.logo} />
+        <LogoHeader className={styles.logo} />
       </div>
       <Navbar />
     </header>

@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./notFound.module.scss";
 
+/**
+ * Affiche le contenu de la page NotFound
+ * @returns {JSX}
+ */
 function NotFound() {
   return (
     <main className={styles.main}>

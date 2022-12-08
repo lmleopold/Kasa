@@ -1,5 +1,11 @@
 import styles from "./banner.module.scss";
-
+/**
+ * Retourne la bannière de la page Home et About
+ * @param {String} picture URL de l'image
+ * @param {String} altText texte alternatif de l'image
+ * @param {String} [bannerTitle] titre qui s'affiche sur la bannière
+ * @returns {JSX} bannière de la page Home et About
+ */
 function Banner({ picture, altText, bannerTitle }) {
   return (
     <header className={styles.banner}>

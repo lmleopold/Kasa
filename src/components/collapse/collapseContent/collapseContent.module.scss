@@ -1,5 +1,7 @@
+@import "../../../app/breakpoints";
+
 .collapseTxt {
-  font-size: var (--collapseTxtSize-d);
+  font-size: var(--collapseTxtSize-d);
   background-color: var(--neutral-1);
   padding: 20px 15px 10px 15px;
   line-height: 142%;
@@ -7,7 +9,7 @@
 }
 
 .collapseList {
-  font-size: var (--collapseTxtSize-d);
+  font-size: var(--collapseTxtSize-d);
   background-color: var(--neutral-1);
   padding: 20px 15px 10px 15px;
 }
@@ -15,3 +17,16 @@
 // .about .collapseTxt {
 //   font-size: var(--aboutCollapseTxtSize-d);
 // }
+
+/*****************
+ **Media Queries**
+ *****************/
+
+@media (max-width: $mobileBreakPoint) {
+  .collapseTxt {
+    font-size: var(--collapseTxtSize-m);
+  }
+  .collapseList {
+    font-size: var(--collapseTxtSize-m);
+  }
+}

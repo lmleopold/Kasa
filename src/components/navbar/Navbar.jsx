@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./navbar.module.scss";
 
+/**
+ * Renvoie la barre de navigation du header
+ * @returns {JSX} la barre de navigation du header
+ */
 function Navbar() {
   return (
     <nav>

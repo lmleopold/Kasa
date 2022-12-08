@@ -16,6 +16,7 @@
   flex: 1;
 }
 
+// permet de faire ressortir les flèches blanches
 .masque {
   background-color: var(--darkColor);
   opacity: 0.1;
@@ -25,6 +26,7 @@
   position: absolute;
 }
 
+// composant parent des 2 boutons
 .arrows {
   // border: 1px solid black;
   z-index: 3;
@@ -39,6 +41,8 @@
   width: 100%;
   height: 100%;
 }
+
+// chaque bouton contient un composant svg flèche
 .arrowButton {
   background: none;
   border: none;
@@ -48,6 +52,8 @@
 
   // border: 1px solid black;
 }
+
+//index de l'image affichée sur le carroussel
 .indexPicture {
   z-index: 4;
   // border: 2px black solid;

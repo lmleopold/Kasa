@@ -1,5 +1,10 @@
 import "./logo.scss";
 
+/**
+ * Renvoie le logo Kasa de l'entête (orange)
+ * @returns {JSX} logo du header
+ */
+
 function LogoOrange() {
   return (
     <svg

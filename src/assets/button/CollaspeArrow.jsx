@@ -1,5 +1,9 @@
 import styles from "./arrow.module.scss";
-
+/**
+ * Renvoit la flèche du collapse
+ * @param {String} pathD direction de la flèche (haut ou bas)
+ * @returns {JSX} flèche du collapse
+ */
 function CollapseArrow({ pathD }) {
   return (
     <svg
