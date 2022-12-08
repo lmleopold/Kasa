@@ -1,12 +1,12 @@
-### RUN BACKEND WITH JSON SERVER
+# RUN BACKEND WITH JSON SERVER
 
 From the backend directory:
 
-# Install JSON Server
+## Install JSON Server
 
 run "npm install -g json-server"
 
-# Start JSON Server
+## Start JSON Server
 
 run "json-server --watch ./data/db.json"
 
