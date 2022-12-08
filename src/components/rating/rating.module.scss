@@ -1,5 +1,25 @@
-.host__rating {
+@import "../../app/breakpoints";
+
+.rating {
   // border: 2px blue solid;
   display: flex;
   flex-direction: row;
+}
+.rating__star {
+  width: var(--starSize-d);
+  height: var(--starSize-d);
+  border: 0px black solid;
+  display: flex;
+  padding: 0;
+}
+
+/*****************
+ **Media Queries**
+ *****************/
+
+@media (max-width: $mobileBreakPoint) {
+  .rating__star {
+    width: var(--starSize-m);
+    height: var(--starSize-m);
+  }
 }

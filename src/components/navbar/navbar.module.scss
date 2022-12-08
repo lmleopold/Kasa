@@ -16,7 +16,7 @@ nav {
 
   // margin: 2px 30px;
   color: var(--primary-1);
-  font-size: var(--headerSize-d);
+  font-size: var(--headFootSize-d);
   &:hover,
   &:focus,
   &:active {
@@ -33,6 +33,6 @@ nav {
     gap: 10px;
   }
   .navLink {
-    font-size: var(--headerSize-m);
+    font-size: var(--headFootSize-m);
   }
 }

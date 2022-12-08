@@ -1,6 +1,4 @@
 import styles from "./slideShowCaption.module.scss";
-import OrangeStar from "../../assets/stars/star_rate-orange-24px 5";
-import GreyStar from "../../assets/stars/star_rate-grey-24px 2";
 import Rating from "../rating/Rating";
 import HostInfos from "../hostInfos/HostInfos";
 import Tags from "../tags/Tags";

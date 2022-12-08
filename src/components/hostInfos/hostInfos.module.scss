@@ -1,3 +1,5 @@
+@import "../../app/breakpoints";
+
 .infos {
   display: flex;
 
@@ -20,4 +22,18 @@
 }
 .portrait__img {
   max-width: 100%;
+}
+
+/*****************
+ **Media Queries**
+ *****************/
+
+@media (max-width: $mobileBreakPoint) {
+  .name {
+    font-size: var(--hostNameSize-m);
+  }
+  .portrait {
+    width: var(--hostPictureSize-m);
+    height: var(--hostPictureSize-m);
+  }
 }

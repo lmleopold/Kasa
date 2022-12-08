@@ -1,19 +1,18 @@
-import GreyStar from "../../assets/stars/star_rate-grey-24px 2";
-import OrangeStar from "../../assets/stars/star_rate-orange-24px 5";
+import Star from "../../assets/stars/Star";
 import styles from "./rating.module.scss";
 
 function Rating({ grade }) {
   const rating = [];
   for (let i = 0; i < grade; i++) {
-    rating.push(<OrangeStar />);
+    rating.push(<Star color="--shinyStar" />);
   }
   for (let i = 0; i < 5 - grade; i++) {
-    rating.push(<GreyStar />);
+    rating.push(<Star color="--darkStar" />);
   }
   return (
-    <ul className={styles.host__rating}>
+    <ul className={styles.rating}>
       {rating.map((star, index) => (
-        <li className={styles.host__rating__star} key={`${star + index}`}>
+        <li className={styles.rating__star} key={`${star + index}`}>
           {star}
         </li>
       ))}

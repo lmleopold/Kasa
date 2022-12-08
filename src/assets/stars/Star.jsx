@@ -1,4 +1,4 @@
-function OrangeStar() {
+function Star({ color }) {
   return (
     <svg
       width="36"
@@ -7,18 +7,18 @@ function OrangeStar() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_26_172)">
+      <g clipPath="url(#clip0_26_173)">
         <path
           d="M21.645 15L18 3L14.355 15H3L12.27 21.615L8.745 33L18 25.965L27.27 33L23.745 21.615L33 15H21.645Z"
-          fill="#FF6060"
+          fill={`var(${color})`}
         />
       </g>
       <defs>
-        <clipPath id="clip0_26_172">
+        <clipPath id="clip0_26_173">
           <rect width="36" height="36" fill="white" />
         </clipPath>
       </defs>
     </svg>
   );
 }
-export default OrangeStar;
+export default Star;

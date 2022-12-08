@@ -48,7 +48,7 @@ function SingleProduct() {
   }, []);
 
   return (
-    <main>
+    <main className={styles.main}>
       {!isDataLoading && (
         <>
           <SlideShow
@@ -63,7 +63,7 @@ function SingleProduct() {
             hostPicture={accomodation.host.picture}
             grade={accomodation.rating}
           />
-          <div className={styles.container}>
+          <div className={styles.collapseContainer}>
             <Collapse title="Description" content={accomodation.description} />
             <Collapse
               title="Equipements"

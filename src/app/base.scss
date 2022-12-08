@@ -9,43 +9,45 @@
   --primary-1: #ff6060;
   --neutral-1: #f7f7f7;
   --darkColor: black;
+  --shinyStar: #ff6060;
+  --darkStar: #e3e3e3;
 
   /*==desktop==*/
 
-  --headerSize-d: 1.71rem;
-  --homeTitleSize-d: 3.43rem;
-  --cardTitleSize-d: 1.29rem;
-  --singleProdTitleSize-d: 2.57rem;
-  --singleProdSubtitleSize-d: 1.29rem;
-  --tagSize-d: 1rem;
-  --aboutCollapseTitleSize-d: 1.71rem;
-  --aboutCollapseTxtSize-d: 1.71rem;
-  --collapseTitleSize-d: 1.29rem;
-  --collapseTxtSize-d: 1.29rem;
-  --hostNameSize-d: 1.29rem;
-  --hostPictureSize-d: 4.57rem;
-  --starSize-d: 2.57rem;
-  --flagSize-d: 1.29rem;
-  --404-title-d: 20.57rem;
-  --404-subtitle-d: 2.57rem;
-  --404-link-d: 1.285rem;
+  --headFootSize-d: 1.5rem;
+  --homeTitleSize-d: 3rem;
+  --cardTitleSize-d: 1.13rem;
+  --singleProdTitleSize-d: 2.25rem;
+  --singleProdSubtitleSize-d: 1.13rem;
+  --tagSize-d: 0.88rem;
+  --aboutCollapseTitleSize-d: 1.5rem;
+  --aboutCollapseTxtSize-d: 1.5rem;
+  --collapseTitleSize-d: 1.13rem;
+  --collapseTxtSize-d: 1.13rem;
+  --hostNameSize-d: 1.13rem;
+  --hostPictureSize-d: 4rem;
+  --starSize-d: 2.25rem;
+  --indexSize-d: 1.13rem;
+  --404-title-d: 18rem;
+  --404-subtitle-d: 2.25rem;
+  --404-link-d: 1.12rem;
 
   /*==mobile==*/
 
-  --headerSize-m: 1.2rem;
-  --homeTitleSize-m: 2.4rem;
-  --cardTitleSize-m: 1.8rem;
-  --singleProdTitleSize-m: 1.8rem;
-  --singleProdSubtitleSize-m: 1.4rem;
-  --tagSize-m: 1rem;
-  --collapseTitleSize-m: 1.3rem;
-  --collapseTxtSize-m: 1.2rem;
-  --hostNameSize-m: 1.2rem;
-  --hostPictureSize-m: 3.2rem;
-  --starSize-m: 1.8rem;
-  --404-title-m: 6.86rem;
-  --404-subtitle-m: 1.285rem;
-  --404-link-m: 1rem;
+  --headFootSize-m: 0.75rem;
+  --homeTitleSize-m: 1.5rem;
+  --cardTitleSize-m: 1.13rem;
+  --singleProdTitleSize-m: 1.13rem;
+  --singleProdSubtitleSize-m: 0.88rem;
+  --tagSize-m: 0.63rem;
+  --collapseTitleSize-m: 0.81rem;
+  --collapseTxtSize-m: 0.75rem;
+  --hostNameSize-m: 0.75rem;
+  --hostPictureSize-m: 2rem;
+  --starSize-m: 1.13rem;
+  --404-title-m: 6rem;
+  --404-subtitle-m: 1.13rem;
+  --404-link-m: 0.88rem;
 }
 
 /* =============
@@ -62,7 +64,7 @@
 
 html {
   // (taille par defaut 16px)
-  font-size: 14px; //desktop
+  font-size: 16px; //desktop
   // font-size: 10px; //mobile
 }
 
@@ -101,6 +103,6 @@ li {
   color: var(--primary-1);
 }
 
-/* ======================
-  ENCAPSULEURS DE CONTENU
-  ======================= */
+/*****************
+ **Media Queries**
+ *****************/

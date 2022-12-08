@@ -1,6 +1,9 @@
+import styles from "./arrow.module.scss";
+
 function CollapseArrow({ pathD }) {
   return (
     <svg
+      className={styles.collapseArrow}
       width="25"
       height="15"
       viewBox="0 0 25 15"
