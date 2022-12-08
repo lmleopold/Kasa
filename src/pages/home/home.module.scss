@@ -6,7 +6,6 @@
   justify-content: space-around;
   width: 100%;
   border-radius: 25px;
-  // border: 2px black solid;
   gap: 50px;
   padding: 50px;
   background-color: var(--neutral-1);
@@ -15,8 +14,6 @@
 .cardItem {
   height: 340px;
   width: 340px;
-  // border: 2px brown solid;
-  // flex: 1;
 
   display: flex;
   border-radius: 10px;
@@ -32,7 +29,6 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    // border: 2px green solid;
     padding: 20px;
     gap: 20px;
   }

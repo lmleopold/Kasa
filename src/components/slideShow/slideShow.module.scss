@@ -4,7 +4,6 @@
   display: flex;
   flex: 1;
   max-height: 415px;
-  // border: solid 2px black;
   border-radius: 25px;
   overflow: hidden;
   margin: 30px 0;
@@ -28,7 +27,6 @@
 
 // composant parent des 2 boutons
 .arrows {
-  // border: 1px solid black;
   z-index: 3;
   position: absolute;
   display: flex;
@@ -49,14 +47,11 @@
   cursor: pointer;
   height: 79px;
   max-width: 5%;
-
-  // border: 1px solid black;
 }
 
 //index de l'image affichée sur le carroussel
 .indexPicture {
   z-index: 4;
-  // border: 2px black solid;
   position: absolute;
   width: 100%;
   bottom: 0;
