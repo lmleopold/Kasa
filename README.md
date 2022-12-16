@@ -12,4 +12,4 @@ Install Kasa with npm
   npm install Kasa
 ```
 
-Merci de consulter les fichiers README.md des dossiers frontend et backend pour pouvoir éxécuter le programme et visualiser le résultat
+Please consult the README.md files of the frontend and backend folders to be able to run the program and visualize the result
