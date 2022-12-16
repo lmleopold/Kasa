@@ -13,9 +13,9 @@
 
 .cardItem {
   height: 340px;
-  width: 340px;
-
-  display: flex;
+  min-width: 340px;
+  max-width: 900px;
+  flex: 1;
   border-radius: 10px;
   overflow: hidden;
 }
