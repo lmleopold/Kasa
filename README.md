@@ -10,14 +10,12 @@ Install Kasa with npm
 
 ```
   git clone https://github.com/lmleopold/Kasa.git
- 
 ```
 
 ## Run locally the backend
 
 ```
   cd kasa/backend
-
 ```
 To run the backend you must have JSON Server installed
 
@@ -25,14 +23,12 @@ To run the backend you must have JSON Server installed
 
 ```
   npm install -g json-server
-
 ```
 
 ### start JSON Server
 
 ```
   json-server --watch ./data/db.json
-
 ```
 Now if you go to http://localhost:3000/accomodations, you'll get the data
 
@@ -41,10 +37,6 @@ Now if you go to http://localhost:3000/accomodations, you'll get the data
 ```
   cd ../kasa/frontend
   npm start
-
 ```
 Runs the app in the development mode.\
 Open [http://localhost:2000](http://localhost:2000) to view it in your browser.
-
-
-Please consult the README.md files of the frontend and backend folders to be able to run the program and visualize the result
