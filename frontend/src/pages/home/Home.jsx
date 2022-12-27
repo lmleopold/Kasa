@@ -30,7 +30,18 @@ function Home() {
     setDataLoading(true);
     async function fetchData() {
       try {
-        const res = await fetch("http://localhost:3000/accomodations");
+        let res;
+        //Si l'adresse IP du serveur distant est disponible alors connexion au serveur
+        if (process.env.REACT_APP_AWS_IP !== undefined) {
+          console.log("backend sur serveur distant");
+          res = await fetch(
+            `http://${process.env.REACT_APP_AWS_IP}:3000/accomodations`
+          );
+          //Sinon utilisation du backend à faire tourner en local
+        } else {
+          console.log("backend en local");
+          res = await fetch(`http://localhost:3000/accomodations`);
+        }
         const data = await res.json();
         setAccomodations(data);
       } catch (error) {
@@ -42,11 +53,6 @@ function Home() {
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  //   window
-  //     .matchMedia("(min-width: 768px)")
-  //     .addEventListener("change", (e) => setMatches(e.matches));
-  // }, []);
   return (
     <main>
       {/**Bannière */}

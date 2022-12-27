@@ -26,9 +26,17 @@ function SingleProduct() {
      */
     async function fetchData() {
       try {
-        const res = await fetch(
-          `http://localhost:3000/accomodations/${params.id}`
-        );
+        let res;
+        //Si l'adresse IP du serveur distant est disponible alors connexion au serveur
+        if (process.env.REACT_APP_AWS_IP !== undefined) {
+          console.log("backend sur serveur distant");
+          res = await fetch(
+            `http://${process.env.REACT_APP_AWS_IP}:3000/accomodations/${params.id}`
+          );
+        } else {
+          res = await fetch(`http://localhost:3000/accomodations/${params.id}`);
+        }
+
         if (!res.ok) {
           navigate("/NotFound");
         } else {
