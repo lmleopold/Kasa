@@ -4,6 +4,11 @@
 
 Kasa is an application that allows people to find appartments between individuals. Kasa interface enables people to connect directly with each other and to reach agreements on prices, dates, etc.
 
+## Tech Stack
+
+**Client:** React, React-router
+**Server:** JSON Server
+
 ## Installation
 
 Install Kasa with npm
