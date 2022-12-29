@@ -31,10 +31,10 @@ function SingleProduct() {
         if (process.env.REACT_APP_AWS_IP !== undefined) {
           console.log("backend sur serveur distant");
           res = await fetch(
-            `http://${process.env.REACT_APP_AWS_IP}:3000/accomodations/${params.id}`
+            `http://${process.env.REACT_APP_AWS_IP}:2000/accomodations/${params.id}`
           );
         } else {
-          res = await fetch(`http://localhost:3000/accomodations/${params.id}`);
+          res = await fetch(`http://localhost:2000/accomodations/${params.id}`);
         }
 
         if (!res.ok) {

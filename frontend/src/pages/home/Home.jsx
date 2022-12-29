@@ -35,12 +35,12 @@ function Home() {
         if (process.env.REACT_APP_AWS_IP !== undefined) {
           console.log("backend sur serveur distant");
           res = await fetch(
-            `http://${process.env.REACT_APP_AWS_IP}:3000/accomodations`
+            `http://${process.env.REACT_APP_AWS_IP}:2000/accomodations`
           );
           //Sinon utilisation du backend à faire tourner en local
         } else {
           console.log("backend en local");
-          res = await fetch(`http://localhost:3000/accomodations`);
+          res = await fetch(`http://localhost:2000/accomodations`);
         }
         const data = await res.json();
         setAccomodations(data);
