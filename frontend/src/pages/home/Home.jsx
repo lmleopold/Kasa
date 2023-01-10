@@ -31,18 +31,18 @@ function Home() {
     async function fetchData() {
       try {
         let res;
-        //Si l'adresse IP du serveur distant est disponible alors connexion au serveur
-        if (process.env.REACT_APP_AWS_IP !== undefined) {
-          console.log("backend sur serveur distant");
-          res = await fetch(
-            `http://${process.env.REACT_APP_AWS_IP}:3000/accomodations`
-          );
-          //Sinon utilisation du backend à faire tourner en local
-        } else {
-          console.log("backend en local");
-          res = await fetch(`http://localhost:3000/accomodations`);
-        }
+        // Définition de l'URL du backend
+        // Si l'adresse IP du serveur distant est disponible dans les variables d'environnement, on utilise cette adresse
+        // Sinon, on utilise le backend en local
+        const backendUrl = process.env.REACT_APP_AWS_IP
+          ? `http://${process.env.REACT_APP_AWS_IP}:2000/accomodations`
+          : `http://localhost:3000/accomodations`;
+        console.log(`URL du backend : ${backendUrl}`);
+        // Connexion au backend
+        res = await fetch(backendUrl);
+        // Récupération des données du backend
         const data = await res.json();
+        // Mise à jour de l'état de l'application avec les données du backend
         setAccomodations(data);
       } catch (error) {
         console.log({ error });
