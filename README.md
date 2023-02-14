@@ -1,5 +1,5 @@
 ## Kasa - Find your next appartment !
-## 7th project of the OpenClassrooms web-developer path
+7th project of the OpenClassrooms web-developer path
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
