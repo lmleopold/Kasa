@@ -8,17 +8,17 @@
 ***
 [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 
-Kasa is an application that allows people to find appartments between individuals. Kasa interface enables people to connect directly with each other
+Kasa is an application that allows people to find appartments between individuals. Kasa interface enables people to connect directly with each other.
 
 Implementation of the application's frontend with React.  
 Simulation of a backend with json-server.  
 AWS hosting both frontend and backend.
 
 The different parts of this project were:
-* Initialize an application with Create React App
-* Develop the interface elements of a website with React components
-* Configure the navigation between the pages of the application with React Router
-* Building the layout with CSS modules
+* Initialize an application with `Create React App`
+* Develop the interface elements of a website with `React components`
+* Configure the navigation between the pages of the application with `React Router`
+* Building the layout with `CSS modules`
 
 Checkout here for more details about the mockups and technical specifications of this project :
 * [technical_sepcifications]( Coding+guidelines+Kasa+FR.pdf)
