@@ -28,7 +28,10 @@ Checkout [the URL to take a look](http://174.129.147.249:3000/)
 
 ### Screenshots
 Home Page![Home Page](homePage.png)
-Page de description d'un logement![Page de description d'un logement](singleProduct.png) Page About![Page About]( about.png)
+
+Accomodation description![Page de description d'un logement](singleProduct.png)
+
+About Page![Page About]( about.png)
 ## Technologies
 ***
 A list of technologies used within the project:
