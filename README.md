@@ -53,14 +53,9 @@ to install JSON Server run:  `npm install -g json-server`
 
 * Clone the repo. 
 * Go to the "backend" folder of the project `cd kasa/backend`
-* Start JSON Server: `json-server --watch ./data/db.json`
+* Start JSON Server: `json-server --watch ./data/db.json --port 2000`
 
-Now if you go to http://localhost:3000/accomodations, you'll get the data 
-
-You can then run the server with `node server`. 
-The server should run on `localhost` with default port `3000`. If the
-server runs on another port for any reason, this is printed to the
-console when the server starts, e.g. `Listening on port 3001`.
+Now if you go to http://localhost:2000/accomodations, you'll get the data.
 
 ### Front end installation ###
 
@@ -70,4 +65,4 @@ console when the server starts, e.g. `Listening on port 3001`.
 Then you can run the app in the development mode.:
 * Run `npm start`
 
-Open [http://localhost:2000](http://localhost:2000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
