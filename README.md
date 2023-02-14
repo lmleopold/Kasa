@@ -24,7 +24,7 @@ Checkout here for more details about the mockups and technical specifications of
 * [technical_sepcifications]( Coding+guidelines+Kasa+FR.pdf)
 * [mockups](UI-Design-Kasa-FR(Copy).pdf)
 
-Checkout the URL to take a look : http://174.129.147.249:3000/
+Checkout [the URL to take a look](http://174.129.147.249:3000/)
 
 ### Screenshots
 Home Page![Home Page](homePage.png)
