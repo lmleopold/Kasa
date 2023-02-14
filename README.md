@@ -11,9 +11,7 @@
 Kasa is an application that allows people to find appartments between individuals. Kasa interface enables people to connect directly with each other
 
 Implementation of the application's frontend with React. 
-
 Simulation of a backend with json-server.
-
 AWS hosting both frontend and backend.
 
 The different parts of this project were:
